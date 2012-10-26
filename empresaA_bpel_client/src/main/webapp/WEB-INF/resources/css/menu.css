@@ -9,7 +9,7 @@ a{display:block;color: #981793;padding:10px}
 
 #menu {
 body {
-background-color: #000;
+background-color: #00F;
 }
 
 * {
@@ -45,5 +45,5 @@ color: #371C1C;
 ul a:hover {
 color: #FFF;
 }
-#menu {background:#B9CAFF}
+#menu {background:#B9CFFF}
 }

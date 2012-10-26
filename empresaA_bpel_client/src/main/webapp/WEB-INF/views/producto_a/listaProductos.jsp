@@ -144,7 +144,7 @@ alert("este campo no está vacío");
     <tr>
 <%--     
     	<td>
-                ${producto.idproductob}
+                ${producto.idproductoa}
         </td> --%>
     
         <td>  
@@ -154,7 +154,7 @@ alert("este campo no está vacío");
              
 
 
-              <c:set var="variable" value="${pageContext.request.contextPath}/imagen/${producto.idproductob}.jpg" />              
+              <c:set var="variable" value="${pageContext.request.contextPath}/imagen/${producto.idproductoa}.jpg" />              
               <img  src="${variable}"width="100" height="100" /> 
               
 
@@ -166,16 +166,16 @@ alert("este campo no está vacío");
         </td>
 
         <td>
-                ${producto.nombre_productoB}
+                ${producto.nombre_productoA}
         </td>
         <td>
-                ${producto.diametro_b}
+                ${producto.diametro_a}
         </td>
         <td>
-                ${producto.longitud_b}
+                ${producto.longitud_a}
         </td>
         <td>
-                ${producto.precio_b}
+                ${producto.precio_a}
         </td>
         <td>
                 ${producto.cantidad_existencias}
@@ -191,8 +191,8 @@ alert("este campo no está vacío");
 
 			<c:if  test="${!empty productosSeleccionados}">
 					<c:forEach items="${productosSeleccionados}" var="productoSelec">
-					<c:set var="esteProducto" value="${producto.idproductob}"/>
-					<c:set var="productoPasado" value="${productoSelec.idproducto_b}"/>
+					<c:set var="esteProducto" value="${producto.idproductoa}"/>
+					<c:set var="productoPasado" value="${productoSelec.idproducto_a}"/>
 					  <c:if  test="${esteProducto==productoPasado}">
 			
 							<h4>Seleccionadas ${productoSelec.cantidad} unidades </h4>
@@ -203,10 +203,10 @@ alert("este campo no está vacío");
 		
 		
 			 
-			<input type= "hidden" name="idProducto" id="idProducto" value= "${producto.idproductob}"/>
+			<input type= "hidden" name="idProducto" id="idProducto" value= "${producto.idproductoa}"/>
 				
 			<input  type="submit" value="Sumar a Carro" onFocus="comprobarCampos(${fila})" />
-			<c:set var="esteProducto" value="${producto.idproductob}"/>
+			<c:set var="esteProducto" value="${producto.idproductoa}"/>
 			<c:set var="productoPedido" value="${productoPedido}"/>
 			 <c:if  test="${esteProducto==productoPedido}">
 	        	<h4> ${errordeCantidad}	</h4>
@@ -218,14 +218,14 @@ alert("este campo no está vacío");
         <sec:authorize access="hasRole('ROLE_ADMIN')">
         <td>
         	<c:url var="editUrl" value="/productos/admin/edit" />
-			<a href="${editUrl}?id=${producto.idproductob}"   onclick="return confirm('¿Quieres cambiar datos de este producto?')" onmouseover="window.status = 'Pulse para Editar Producto'; return true" onmouseout="window.status=''"> <span title='Pulse para Editar Producto'> <img border=0 src="../resources/imagenes/modificar.jpg" height=68 width=53> </a>
+			<a href="${editUrl}?id=${producto.idproductoa}"   onclick="return confirm('¿Quieres cambiar datos de este producto?')" onmouseover="window.status = 'Pulse para Editar Producto'; return true" onmouseout="window.status=''"> <span title='Pulse para Editar Producto'> <img border=0 src="../resources/imagenes/modificar.jpg" height=68 width=53> </a>
 			
 		</td>
 		
 		<td>
 
         	<c:url var="editUrl" value="/productos/admin/borrar" />
-			<a href="${editUrl}?id=${producto.idproductob}"    onclick="return confirm('¿Quieres borrar este producto?')" onmouseover="window.status = 'Pulse para Borrar Producto'; return true" onmouseout="window.status=''"> <span title='Pulse para Borrar Producto'> <img border=0 src="../resources/imagenes/borrar.jpg" height=68 width=53> </a>
+			<a href="${editUrl}?id=${producto.idproductoa}"    onclick="return confirm('¿Quieres borrar este producto?')" onmouseover="window.status = 'Pulse para Borrar Producto'; return true" onmouseout="window.status=''"> <span title='Pulse para Borrar Producto'> <img border=0 src="../resources/imagenes/borrar.jpg" height=68 width=53> </a>
 			
 		</td>
 		</sec:authorize>

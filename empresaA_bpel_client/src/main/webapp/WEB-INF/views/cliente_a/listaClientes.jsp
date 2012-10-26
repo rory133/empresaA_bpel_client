@@ -27,42 +27,42 @@
 <c:forEach items="${clientes}" var="cliente">
     <tr>
         <td>
-                ${cliente.nombre_b}
+                ${cliente.nombre_a}
         </td>
         <td>
-                ${cliente.apellidos_b}
+                ${cliente.apellidos_a}
         </td>
         <td>
-                ${cliente.dni_nif_b}
+                ${cliente.dni_nif_a}
         </td>
         <td>
-                ${cliente.email_b}
+                ${cliente.email_a}
         </td>
         <td>
-                ${cliente.login_usuario_b}
+                ${cliente.login_usuario_a}
         </td>
         <td>
-                ${cliente.fecha_alta_b}
+                ${cliente.fecha_alta_a}
         </td>
         <td>
-                ${cliente.direccion_b}
+                ${cliente.direccion_a}
         </td>
         <td>
-                ${cliente.provincia_b}
+                ${cliente.provincia_a}
         </td>
         <td>
-                ${cliente.codigopostal_b}
+                ${cliente.codigopostal_a}
         </td>
         <td>
         	<c:url var="editUrl" value="/clientes/cliente/edit" />
-			<a href="${editUrl}?id=${cliente.idusuarios_b}"   onclick="return confirm('¿Quieres cambiar datos de este cliente?')" onmouseover="window.status = 'Pulse para Editar cliente'; return true" onmouseout="window.status=''"><span title='Pulse para Editar datos cliente'> <img border=0 src="../../resources/imagenes/modificar.jpg" height=68 width=53> </a>
+			<a href="${editUrl}?id=${cliente.idusuarios_a}"   onclick="return confirm('¿Quieres cambiar datos de este cliente?')" onmouseover="window.status = 'Pulse para Editar cliente'; return true" onmouseout="window.status=''"><span title='Pulse para Editar datos cliente'> <img border=0 src="../../resources/imagenes/modificar.jpg" height=68 width=53> </a>
 			
 		</td>
 		
 		<td>
 
         	<c:url var="editUrl" value="/clientes/admin/borrar" />
-			<a href="${editUrl}?id=${cliente.idusuarios_b}"   onclick="return confirm('¿Quieres borrar este cliente?')"onmouseover="window.status = 'Pulse para eliminara'; return true" onmouseout="window.status=''"><span title='Pulse para Eliminar cliente'> <img border=0 src="../../resources/imagenes/borrar.jpg" height=68 width=53> </a>
+			<a href="${editUrl}?id=${cliente.idusuarios_a}"   onclick="return confirm('¿Quieres borrar este cliente?')"onmouseover="window.status = 'Pulse para eliminara'; return true" onmouseout="window.status=''"><span title='Pulse para Eliminar cliente'> <img border=0 src="../../resources/imagenes/borrar.jpg" height=68 width=53> </a>
 			
 		</td>
 	

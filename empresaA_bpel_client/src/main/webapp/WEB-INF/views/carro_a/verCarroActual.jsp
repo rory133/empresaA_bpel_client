@@ -69,7 +69,7 @@ h4 {color:#B40431;}
              
 
 
-              <c:set var="variable" value="${pageContext.request.contextPath}/imagen/${productosSeleccionados.idproducto_b}.jpg" />              
+              <c:set var="variable" value="${pageContext.request.contextPath}/imagen/${productosSeleccionados.idproducto_a}.jpg" />              
               <img  src="${variable}"width="100" height="100" /> 
               
 
@@ -87,20 +87,20 @@ h4 {color:#B40431;}
                 ${productosSeleccionados.cantidad}
         </td>
          <td>
-                 ${productosSeleccionados.precio_b}
+                 ${productosSeleccionados.precio_a}
          
          </td>
          
         <td>
                  
-                 <c:set var="total" value="${total+(productosSeleccionados.precio_b*productosSeleccionados.cantidad)}" scope="page" />
+                 <c:set var="total" value="${total+(productosSeleccionados.precio_a*productosSeleccionados.cantidad)}" scope="page" />
                  ${productosSeleccionados.subTotal}
          
          </td>
         
         <td>
         <c:url var="editUrl" value="/carro/eliminarProductoCarroActual" />
-			<a href="${editUrl}?idProductoSeleccionado=${productosSeleccionados.idProductoSeleccionado}&idProducto=${productosSeleccionados.idproducto_b}&cantidad=${productosSeleccionados.cantidad}"    onclick="return confirm('¿Quieres borrar este producto?')" onmouseover="window.status = 'Pulse para eliminar el Producto del carro'; return true" onmouseout="window.status=''"> <span title='Pulse para eliminar el Producto del carro'> <img border=0 src="../resources/imagenes/borrar.jpg" height=68 width=53> </a>
+			<a href="${editUrl}?idProductoSeleccionado=${productosSeleccionados.idProductoSeleccionado}&idProducto=${productosSeleccionados.idproducto_a}&cantidad=${productosSeleccionados.cantidad}"    onclick="return confirm('¿Quieres borrar este producto?')" onmouseover="window.status = 'Pulse para eliminar el Producto del carro'; return true" onmouseout="window.status=''"> <span title='Pulse para eliminar el Producto del carro'> <img border=0 src="../resources/imagenes/borrar.jpg" height=68 width=53> </a>
 			
               
         </td>

@@ -15,10 +15,10 @@
 <body>
 
 <h2>Introducir Producto_B</h2>
-<%-- <form:form method="POST" commandName="producto_b"> --%>
-<%-- <form:form method="POST" modelAttribute="producto_b" id="producto_b" type="producto_b" action="crearProductoB" enctype="multipart/form-data"> --%>
-<form:form method="POST" modelAttribute="producto_b" id="producto_b" type="producto_b" action="crearProductoB" enctype="multipart/form-data">
-<%-- <form:form method="POST" modelAttribute="producto_b"> --%>
+<%-- <form:form method="POST" commandName="producto_a"> --%>
+<%-- <form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoB" enctype="multipart/form-data"> --%>
+<form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoB" enctype="multipart/form-data">
+<%-- <form:form method="POST" modelAttribute="producto_a"> --%>
 
 			
 	<fieldset>
@@ -33,17 +33,17 @@
 			</td>
 		</tr>
 		<tr>
-				<th><label for="longitud_b">Longitud :</label></th>
-				<td><form:input path="longitud_b" maxlength="15" id="longitud_b"/>
-					<form:errors path="longitud_b" cssClass="error" />
+				<th><label for="longitud_a">Longitud :</label></th>
+				<td><form:input path="longitud_a" maxlength="15" id="longitud_a"/>
+					<form:errors path="longitud_a" cssClass="error" />
 					<h2>${exception.customMsg}</h2>
 				</td>
 		</tr>
 		
 		<tr>
-				<th><label for="diametro_b">Diametro :</label></th>
-				<td><form:input path="diametro_b" maxlength="15" id="diametro_b"/>
-					<form:errors path="diametro_b" cssClass="error" />
+				<th><label for="diametro_a">Diametro :</label></th>
+				<td><form:input path="diametro_a" maxlength="15" id="diametro_a"/>
+					<form:errors path="diametro_a" cssClass="error" />
 				</td>
 		</tr>
 		<tr>
@@ -53,9 +53,9 @@
 				</td>
 		</tr>
 		<tr>
-				<th><label for="precio_b">Precio :</label></th>
-				<td><form:input path="precio_b" maxlength="15" id="precio_b"/>
-					<form:errors path="precio_b" cssClass="error" />
+				<th><label for="precio_a">Precio :</label></th>
+				<td><form:input path="precio_a" maxlength="15" id="precio_a"/>
+					<form:errors path="precio_a" cssClass="error" />
 				</td>
 		</tr>
 		
@@ -77,7 +77,7 @@
 		
 	     <tr>
     	  
-    	     <td><input name="producto_b" type="submit" value="Crear Producto" /></td>
+    	     <td><input name="producto_a" type="submit" value="Crear Producto" /></td>
   	   </tr>
 
 	</table>	

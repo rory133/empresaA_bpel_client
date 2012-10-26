@@ -15,9 +15,9 @@
 <body>
 
 <h2>Modificar Producto_B</h2>
-<c:if  test="${!empty producto_b}">
-<%-- <form:form method="POST" commandName="producto_b"> --%>
-<form:form method="POST" modelAttribute="producto_b" id="producto_b" type="producto_b" action="modificarProductoB" enctype="multipart/form-data">
+<c:if  test="${!empty producto_a}">
+<%-- <form:form method="POST" commandName="producto_a"> --%>
+<form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="modificarProductoB" enctype="multipart/form-data">
 <%--  <form:form action="/productos/modificarProductoB" method="POST"> --%> 
 	<fieldset>
 	
@@ -26,7 +26,7 @@
 	  	     <tr>
 			
 	     	<!-- <th><label for="idproductob">idproductob</label></th> -->
-			<td><form:hidden path="idproductob" maxlength="15"  id="idproductob" value= "${producto_b.idproductob}"/>
+			<td><form:hidden path="idproductob" maxlength="15"  id="idproductob" value= "${producto_a.idproductob}"/>
 				<form:errors path="idproductob" cssClass="error" />
 				
 			</td>
@@ -36,7 +36,7 @@
 	     <tr>
 			
 	     	<th><label for="nombre_productoB">Codigo producto:</label></th>
-			<td><form:input path="nombre_productoB" maxlength="15"  id="nombre_productoB" value= "${producto_b.nombre_productoB}"/>
+			<td><form:input path="nombre_productoB" maxlength="15"  id="nombre_productoB" value= "${producto_a.nombre_productoB}"/>
 				<form:errors path="nombre_productoB" cssClass="error" />
 				
 			</td>
@@ -44,33 +44,33 @@
 		
 		
 		<tr>
-				<th><label for="longitud_b">Longitud :</label></th>
-				<td><form:input path="longitud_b" maxlength="15" id="longitud_b" value= "${producto_b.longitud_b}" />
-					<form:errors path="longitud_b" cssClass="error" />
+				<th><label for="longitud_a">Longitud :</label></th>
+				<td><form:input path="longitud_a" maxlength="15" id="longitud_a" value= "${producto_a.longitud_a}" />
+					<form:errors path="longitud_a" cssClass="error" />
 				</td>
 		</tr>
 		
 		<tr>
-				<th><label for="diametro_b">Diametro :</label></th>
-				<td><form:input path="diametro_b" maxlength="15" id="diametro_b" value= "${producto_b.diametro_b}"/>
-					<form:errors path="diametro_b" cssClass="error" />
+				<th><label for="diametro_a">Diametro :</label></th>
+				<td><form:input path="diametro_a" maxlength="15" id="diametro_a" value= "${producto_a.diametro_a}"/>
+					<form:errors path="diametro_a" cssClass="error" />
 				</td>
 		</tr>
 		<tr>
 				<th><label for="cantidad_existencias">Cantidad de existencias :</label></th>
-				<td><form:input path="cantidad_existencias" maxlength="15" id="cantidad_existencias" value= "${producto_b.cantidad_existencias}"/>
+				<td><form:input path="cantidad_existencias" maxlength="15" id="cantidad_existencias" value= "${producto_a.cantidad_existencias}"/>
 					<form:errors path="cantidad_existencias" cssClass="error" />
 				</td>
 		</tr>
 		<tr>
-				<th><label for="precio_b">Precio :</label></th>
-				<td><form:input path="precio_b" maxlength="15" id="precio_b" value= "${producto_b.precio_b}"/>
-					<form:errors path="precio_b" cssClass="error" />
+				<th><label for="precio_a">Precio :</label></th>
+				<td><form:input path="precio_a" maxlength="15" id="precio_a" value= "${producto_a.precio_a}"/>
+					<form:errors path="precio_a" cssClass="error" />
 				</td>
 		</tr>
 		<tr>      
-		      <th><label for="precio_b">imagen producto :</label></th>
-		      <td><c:set var="variable" value="${pageContext.request.contextPath}/imagen/${producto_b.idproductob}.jpg" />              
+		      <th><label for="precio_a">imagen producto :</label></th>
+		      <td><c:set var="variable" value="${pageContext.request.contextPath}/imagen/${producto_a.idproductob}.jpg" />              
               <img  src="${variable}"width="100" height="100" />
               
        		</td>
@@ -93,7 +93,7 @@
 		</tr>
 	     <tr>
     	  
-    	     <td><input name="producto_b" type="submit" value="modificar producto." /></td>
+    	     <td><input name="producto_a" type="submit" value="modificar producto." /></td>
     	     
   	   </tr>
 	

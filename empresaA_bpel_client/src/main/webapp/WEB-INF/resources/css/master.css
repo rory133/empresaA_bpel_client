@@ -7,7 +7,7 @@ p{margin:0 10px 10px}
 a{display:block;color: #981793;padding:10px}
 
 #header  h1{height:80px;line-height:80px;margin:0;
-  padding-left:10px;background: #EEE;color: #79B30B}
+  padding-left:10px;background: #E1F5A9;color: #FA5858}
   
 }
 
@@ -31,9 +31,9 @@ p{line-height:1.4}
   padding: 10px;
   
 } */
-#menu {background:#B9CAFF} 
+#menu {background:#FAFFFF} 
 
-#footer {background: #333;color: #FFF}
+#footer {background: #33F;color: #FAA}
 #footer  p{margin:0;padding:5px 10px}
 
 .table {

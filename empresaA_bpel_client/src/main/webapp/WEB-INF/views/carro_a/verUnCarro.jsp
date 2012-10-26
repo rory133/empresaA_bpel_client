@@ -66,7 +66,7 @@ h4 {color:#B40431;}
              
 
 
-              <c:set var="variable" value="${pageContext.request.contextPath}/imagen/${productosSeleccionados.idproducto_b}.jpg" />              
+              <c:set var="variable" value="${pageContext.request.contextPath}/imagen/${productosSeleccionados.idproducto_a}.jpg" />              
               <img  src="${variable}"width="50" height="50" /> 
               
 
@@ -85,7 +85,7 @@ h4 {color:#B40431;}
         </td>
         
          <td>
-                 ${productosSeleccionados.precio_b}
+                 ${productosSeleccionados.precio_a}
          
          </td>
 

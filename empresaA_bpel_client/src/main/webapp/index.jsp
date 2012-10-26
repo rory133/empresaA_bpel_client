@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>hola</h1>
+
 
 <%-- <c:redirect url="inicio.htm" /> --%>
 

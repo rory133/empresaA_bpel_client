@@ -7,88 +7,85 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-<title>Modificar cliente</title>
+<title>Crear cliente</title>
 
 
 </head>
 <body>
 
-<h2>modificar Cliente_B</h2>
-
-<c:if  test="${!empty cliente_b}">
-
-<form:form method="POST" modelAttribute="cliente_b" id="cliente_b" type="cliente_b" action="${pageContext.request.contextPath}/clientes/cliente/modificarCliente_B" enctype="multipart/form-data">
-
+<h2>Introducir Cliente_B</h2>
+<%-- <form:form method="POST" commandName="producto_a"> --%>
+<%-- <form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoB" enctype="multipart/form-data"> --%>
+<form:form method="POST" modelAttribute="cliente_a" id="cliente_a" type="cliente_a"  enctype="multipart/form-data">
+<%-- <form:form method="POST" modelAttribute="producto_a"> --%>
 
 			
 	<fieldset>
 	 
 	  <table>
-	  
-	  	     <tr>
-			
-	     	<!-- <th><label for="nombre_b">idusuarios_b :</label></th> -->
-			<td><form:hidden path="idusuarios_b" maxlength="15"  id="nombre_b" value= "${cliente_b.idusuarios_b}" />
-				<form:errors path="idusuarios_b" cssClass="error" />
-				
-			</td>
-		</tr>
 	     <tr>
 			
-	     	<th><label for="nombre_b">Nombre :</label></th>
-			<td><form:input path="nombre_b" maxlength="15"  id="nombre_b" value= "${cliente_b.nombre_b}"/>
-				<form:errors path="nombre_b" cssClass="error" />
+	     	<th><label for="nombre_a">Nombre :</label></th>
+			<td><form:input path="nombre_a" maxlength="55"  id="nombre_a"/>
+				<form:errors path="nombre_a" cssClass="error" />
 				
 			</td>
 		</tr>
 		<tr>
-				<th><label for="apellidos_b">Apellidos :</label></th>
-				<td><form:input path="apellidos_b" maxlength="15" id="apellidos_b" value= "${cliente_b.apellidos_b}"/>
-					<form:errors path="apellidos_b" cssClass="error" />
+				<th><label for="apellidos_a">Apellidos :</label></th>
+				<td><form:input path="apellidos_a" maxlength="55" id="apellidos_a"/>
+					<form:errors path="apellidos_a" cssClass="error" />
 					
 				</td>
 		</tr>
 		
 		<tr>
-				<th><label for="dni_nif_b">DNI/NIF :</label></th>
-				<td><form:input path="dni_nif_b" maxlength="15" id="dni_nif_b" value= "${cliente_b.dni_nif_b}"/>
-					<form:errors path="dni_nif_b" cssClass="error" />
+				<th><label for="dni_nif_a">DNI/NIF :</label></th>
+				<td><form:input path="dni_nif_a" maxlength="15" id="dni_nif_a"/>
+					<form:errors path="dni_nif_a" cssClass="error" />
 				</td>
 		</tr>
 		<tr>
-				<th><label for="email_b">e-mail :</label></th>
-				<td><form:input path="email_b" maxlength="75" id="email_b"  value= "${cliente_b.email_b}"/>
-					<form:errors path="email_b" cssClass="error" />
+				<th><label for="email_a">e-mail :</label></th>
+				<td><form:input path="email_a" maxlength="75" id="email_a"/>
+					<form:errors path="email_a" cssClass="error" />
 				</td>
 		</tr>
 		<tr>
-				<th><label for="login_usuario_b">Login :</label></th>
-				<td><form:input path="login_usuario_b" maxlength="15" id="login_usuario_b" value= "${cliente_b.login_usuario_b}"/>
-					<form:errors path="login_usuario_b" cssClass="error" />
+				<th><label for="login_usuario_a">Login :</label></th>
+				<td><form:input path="login_usuario_a" maxlength="15" id="login_usuario_a"/>
+					<form:errors path="login_usuario_a" cssClass="error" />
 					<form:errors cssClass="error" element="loginInvalido"/>
-					<small>login de usuario</small>
+					<small>de 4 a 15 caracteres</small>
 				</td>
 		</tr>
 		<tr>
-		<th><label for="password_b">Password :</label></th>
-				<td><form:password path="password_b" maxlength="15" id="password_b" value= "${cliente_b.password_b}"/>
-					<form:errors path="password_b" cssClass="error" />
+		<th><label for="password_a">Password :</label></th>
+				<td><form:password path="password_a" maxlength="15" id="password_a"/>
+					<form:errors path="password_a" cssClass="error" />
 					<small>de 4 a 10 caracteres</small>
 				</td>
 		</tr>
 				
 		<tr>
-				<th><label for="direccion_b">Dirección :</label></th>
-				<td><form:input path="direccion_b" maxlength="15" id="direccion_b" value= "${cliente_b.direccion_b}"/>
-					<form:errors path="direccion_b" cssClass="error" />
+				<th><label for="direccion_a">Dirección :</label></th>
+				<td><form:input path="direccion_a" maxlength="15" id="direccion_a"/>
+					<form:errors path="direccion_a" cssClass="error" />
 				</td>
 		</tr>	
-
+<%-- 		<tr>
+				<th><label for="provincia_a">Provincia :</label></th>
+				<td><form:select path="provincia_a">
+					  <form:option value="NONE" label="--- Select ---" />
+					  <form:options items="${provincias.listadoProvincias}" />
+					  </form:select>
+               </td>
+		</tr>	 --%>
 		
 		<tr>
-      <td>provincia_b:</td>
+      <td>provincia_a:</td>
       <td>
-       <select name= provincia_b>
+       <select name= provincia_a>
 		<option value="Alava" selected="selected">Alava</option>
 		<option value="Albacete">Albacete</option>
 		<option value="Alicante">Alicante</option>
@@ -146,9 +143,9 @@
    </tr>
 	
 		<tr>
-				<th><label for="codigopostal_b">Codigo postal :</label></th>
-				<td><form:input path="codigopostal_b" maxlength="15" id="codigopostal_b" value= "${cliente_b.codigopostal_b}"/>
-					<form:errors path="codigopostal_b" cssClass="error" />
+				<th><label for="codigopostal_a">Codigo postal :</label></th>
+				<td><form:input path="codigopostal_a" maxlength="15" id="codigopostal_a"/>
+					<form:errors path="codigopostal_a" cssClass="error" />
 				</td>
 		</tr>	
 				
@@ -156,7 +153,7 @@
 		
 	     <tr>
     	  
-    	     <td><input name="cliente_b" type="submit" value="Gruardar cambios" /></td>
+    	     <td><input name="cliente_a" type="submit" value="Crear Cuenta" /></td>
   	   </tr>
 
 	</table>	
@@ -170,8 +167,7 @@
 
 	
 </form:form>
-</c:if>
-<c:url var="editUrl" value="../../productos/listado" />
-			<a href="${editUrl}"    onmouseover="window.status = 'Pulse para volver al listado de productos'; return true" onmouseout="window.status=''"> <span title='Pulse para volver al listado de productos'> <img border=0 src="../../resources/imagenes/listado.jpg" height=68 width=53> </a>
+<c:url var="editUrl" value="../productos/listado" />
+			<a href="${editUrl}"    onmouseover="window.status = 'Pulse para volver al listado de productos'; return true" onmouseout="window.status=''"> <span title='Pulse para volver al listado de productos'> <img border=0 src="../resources/imagenes/listado.jpg" height=68 width=53> </a>
 </body>
 </html>

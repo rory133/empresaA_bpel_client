@@ -28,20 +28,20 @@
 		 <put-attribute name="body" value="/WEB-INF/views/home.jsp"/>
 	 </definition>	 
 	 
-	 <definition name="producto_b/listaProductos" extends="base.definition">
+	 <definition name="producto_a/listaProductos" extends="base.definition">
 		 <put-attribute name="title" value="listaProductos"/>
-		 <put-attribute name="body" value="/WEB-INF/views/producto_b/listaProductos.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/producto_a/listaProductos.jsp"/>
     
      </definition>
     	 
-	  <definition name="producto_b/edit" extends="base.definition">
+	  <definition name="producto_a/edit" extends="base.definition">
 		 <put-attribute name="title" value="crearProducto_B"/>
-		 <put-attribute name="body" value="/WEB-INF/views/producto_b/edit.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/producto_a/edit.jsp"/>
       </definition>
       
-      <definition name="producto_b/modificar" extends="base.definition">
-		 <put-attribute name="title" value="Modificar producto_b"/>
-		 <put-attribute name="body" value="/WEB-INF/views/producto_b/modificar.jsp"/>
+      <definition name="producto_a/modificar" extends="base.definition">
+		 <put-attribute name="title" value="Modificar producto_a"/>
+		 <put-attribute name="body" value="/WEB-INF/views/producto_a/modificar.jsp"/>
       </definition>
       
       <definition name="error" extends="base.definition">
@@ -49,33 +49,33 @@
 		 <put-attribute name="body" value="/WEB-INF/spring/GenericExceptionPage.jsp"/>
       </definition>
      
-     <definition name="cliente_b/edit" extends="base.definition">
+     <definition name="cliente_a/edit" extends="base.definition">
 		 <put-attribute name="title" value="crearCliente_B"/>
-		 <put-attribute name="body" value="/WEB-INF/views/cliente_b/edit.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/cliente_a/edit.jsp"/>
       </definition>
-      	 <definition name="cliente_b/listaClientes" extends="base.definition">
+      	 <definition name="cliente_a/listaClientes" extends="base.definition">
 		 <put-attribute name="title" value="listaClientes"/>
-		 <put-attribute name="body" value="/WEB-INF/views/cliente_b/listaClientes.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/cliente_a/listaClientes.jsp"/>
 	 </definition>
 		 
-	  <definition name="cliente_b/modificar" extends="base.definition">
-		 <put-attribute name="title" value="Modificar cliente_b"/>
-		 <put-attribute name="body" value="/WEB-INF/views/cliente_b/modificar.jsp"/>
+	  <definition name="cliente_a/modificar" extends="base.definition">
+		 <put-attribute name="title" value="Modificar cliente_a"/>
+		 <put-attribute name="body" value="/WEB-INF/views/cliente_a/modificar.jsp"/>
       </definition>
     
     
-      <definition name="administrador_b/edit" extends="base.definition">
+      <definition name="administrador_a/edit" extends="base.definition">
 		 <put-attribute name="title" value="crearAdministrador_B"/>
-		 <put-attribute name="body" value="/WEB-INF/views/administrador_b/edit.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/administrador_a/edit.jsp"/>
       </definition>
-      	 <definition name="administrador_b/listaAdministradores" extends="base.definition">
+      	 <definition name="administrador_a/listaAdministradores" extends="base.definition">
 		 <put-attribute name="title" value="listaAdministradores"/>
-		 <put-attribute name="body" value="/WEB-INF/views/administrador_b/listaAdministradores.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/administrador_a/listaAdministradores.jsp"/>
 	 </definition>
 		 
-	  <definition name="administrador_b/modificar" extends="base.definition">
-		 <put-attribute name="title" value="Modificar administrador_b"/>
-		 <put-attribute name="body" value="/WEB-INF/views/administrador_b/modificar.jsp"/>
+	  <definition name="administrador_a/modificar" extends="base.definition">
+		 <put-attribute name="title" value="Modificar administrador_a"/>
+		 <put-attribute name="body" value="/WEB-INF/views/administrador_a/modificar.jsp"/>
       </definition>
       
     
@@ -87,24 +87,24 @@
       
       
       
-      <definition name="carro_b/verCarroActual" extends="base.definition">
+      <definition name="carro_a/verCarroActual" extends="base.definition">
 		 <put-attribute name="title" value="TU CARRO"/>
-		 <put-attribute name="body" value="/WEB-INF/views/carro_b/verCarroActual.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/carro_a/verCarroActual.jsp"/>
       </definition>
       
-            <definition name="carro_b/verPedidos" extends="base.definition">
+            <definition name="carro_a/verPedidos" extends="base.definition">
 		 <put-attribute name="title" value="LISTA PEDIDOS"/>
-		 <put-attribute name="body" value="/WEB-INF/views/carro_b/listaCarrosPedidos.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/carro_a/listaCarrosPedidos.jsp"/>
       </definition>
       
-      <definition name="carro_b/verDetallesCarro" extends="base.soloBody">
+      <definition name="carro_a/verDetallesCarro" extends="base.soloBody">
 		 <put-attribute name="title" value="TU CARRO"/>
-		 <put-attribute name="body" value="/WEB-INF/views/carro_b/verUnCarro.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/carro_a/verUnCarro.jsp"/>
       </definition>
       
-      <definition name="carro_b/datosTarjeta" extends="base.soloBody">
+      <definition name="carro_a/datosTarjeta" extends="base.soloBody">
 		 <put-attribute name="title" value="datos Tarjeta"/>
-		 <put-attribute name="body" value="/WEB-INF/views/carro_b/datosTarjeta.jsp"/>
+		 <put-attribute name="body" value="/WEB-INF/views/carro_a/datosTarjeta.jsp"/>
       </definition>
            
 </tiles-definitions>
