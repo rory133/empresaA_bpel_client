@@ -143,7 +143,7 @@ height: 16px;
 		<li><a href="${pageContext.request.contextPath}/carro/verTodosLosPedidos">MIS PEDIDOS</a>
 
 	</li>
- 	<li><a href="${pageContext.request.contextPath}/clientes/cliente/modificarMiCuenta_B/?login=${pageContext.request.userPrincipal.name}">MI CUENTA</a>
+ 	<li><a href="${pageContext.request.contextPath}/clientes/cliente/modificarMiCuenta_A/?login=${pageContext.request.userPrincipal.name}">MI CUENTA</a>
 
 	</li>
 	

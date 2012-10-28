@@ -231,7 +231,7 @@ public class Producto_AController {
 	
 	
 	//public ModelAndView modProducto_A_form(@Valid @ModelAttribute("producto_a")Producto_A producto_a,  BindingResult  result,@RequestParam(value="image",required=false)MultipartFile image, HttpServletRequest request){
-	@RequestMapping(value="/admin/modificarProductoB", method = RequestMethod.POST)
+	@RequestMapping(value="/admin/modificarProductoA", method = RequestMethod.POST)
 	public ModelAndView modProducto_A_form(@Valid @ModelAttribute("producto_a")Producto_A producto_a,  BindingResult  result,@RequestParam(value="image",required=false)MultipartFile image)throws Exception{
 
 		//si tiene errores lo devolvemos a la pagina de modificar Producto_A
@@ -366,7 +366,7 @@ public class Producto_AController {
 }
 	
 	
-	@RequestMapping(value="/admin/crearProductoB",method = RequestMethod.POST)
+	@RequestMapping(value="/admin/crearProductoA",method = RequestMethod.POST)
 	public ModelAndView addProducto_A_form(@Valid @ModelAttribute("producto_a")Producto_A producto_a, BindingResult  result,@RequestParam(value="image",required=false)MultipartFile image) throws Exception{
 
 

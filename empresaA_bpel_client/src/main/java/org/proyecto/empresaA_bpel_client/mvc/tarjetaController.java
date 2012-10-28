@@ -31,7 +31,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class tarjetaController {
 	
 	@Autowired
-	private Carro_A carro_b;
+	private Carro_A carro_a;
 	
 
 	
@@ -62,7 +62,7 @@ public class tarjetaController {
 		ResponseEntity<Carro_A> carroDevuelto=null;
 		try {
 			 carroDevuelto = 
-					restTemplate.exchange("http://localhost:8080/empresaA_bpel_server/carro/carro_b/{id}",
+					restTemplate.exchange("http://localhost:8080/empresaA_bpel_server/carro/carro_a/{id}",
 							HttpMethod.GET, entity4, Carro_A.class,idCarro);
 	
 			
@@ -71,15 +71,15 @@ public class tarjetaController {
 					logger.error(e);
 		}
 		
-		carro_b=carroDevuelto.getBody();
+		carro_a=carroDevuelto.getBody();
 		
 		if(result.hasErrors()) {
 			logger.info("validarTarjeta:---tiene errores----"+result.toString());
 				
-				ModelAndView mav= new ModelAndView("carro_b/datosTarjeta");
+				ModelAndView mav= new ModelAndView("carro_a/datosTarjeta");
 				mav.addObject("tarjetaCredito", tarjetaCredito);
 				mav.addAllObjects(result.getModel());
-				mav.addObject("Carro", carro_b);
+				mav.addObject("Carro", carro_a);
 				return mav;
 			}
 		// ----Preparamos acceptable media type----
@@ -105,7 +105,7 @@ public class tarjetaController {
 		}
 		
 		
-		session.removeAttribute("carro_b");
+		session.removeAttribute("carro_a");
 		ModelAndView mav= new ModelAndView("redirect: ../../../carro/verTodosLosPedidos");
 		return mav;
 		

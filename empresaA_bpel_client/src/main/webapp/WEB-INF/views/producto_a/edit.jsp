@@ -16,8 +16,8 @@
 
 <h2>Introducir Producto_B</h2>
 <%-- <form:form method="POST" commandName="producto_a"> --%>
-<%-- <form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoB" enctype="multipart/form-data"> --%>
-<form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoB" enctype="multipart/form-data">
+<%-- <form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoA" enctype="multipart/form-data"> --%>
+<form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoA" enctype="multipart/form-data">
 <%-- <form:form method="POST" modelAttribute="producto_a"> --%>
 
 			
@@ -26,9 +26,9 @@
 	  <table>
 	     <tr>
 			
-	     	<th><label for="nombre_productoB">Codigo producto:</label></th>
-			<td><form:input path="nombre_productoB" maxlength="15"  id="nombre_productoB"/>
-				<form:errors path="nombre_productoB" cssClass="error" />
+	     	<th><label for="nombre_productoA">Codigo producto:</label></th>
+			<td><form:input path="nombre_productoA" maxlength="15"  id="nombre_productoA"/>
+				<form:errors path="nombre_productoA" cssClass="error" />
 				
 			</td>
 		</tr>
@@ -68,12 +68,12 @@
 				
 				
 				
-	<%-- 		<td><form:label path="nombre_productoB">nombr e_productoB</form:label></td>
-			<td><form:input path="nombre_productoB"></form:input></td> --%>
-			<%-- <form:input path="nombre_productoB"/> --%>
-			<%-- <td><form:input path="nombre_productoB"></form:input></td>   --%> 
-			<%-- <form:input path="nombre_productoB" id="nombre_productoB"/> --%>
-			<%--<td><form:input path="nombre_productoB" size="33"/></td> --%>
+	<%-- 		<td><form:label path="nombre_productoA">nombr e_productoA</form:label></td>
+			<td><form:input path="nombre_productoA"></form:input></td> --%>
+			<%-- <form:input path="nombre_productoA"/> --%>
+			<%-- <td><form:input path="nombre_productoA"></form:input></td>   --%> 
+			<%-- <form:input path="nombre_productoA" id="nombre_productoA"/> --%>
+			<%--<td><form:input path="nombre_productoA" size="33"/></td> --%>
 		
 	     <tr>
     	  

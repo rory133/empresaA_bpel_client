@@ -14,10 +14,10 @@
 </head>
 <body>
 
-<h2>Modificar Producto_B</h2>
+<h2>Modificar Producto_A</h2>
 <c:if  test="${!empty producto_a}">
 <%-- <form:form method="POST" commandName="producto_a"> --%>
-<form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="modificarProductoB" enctype="multipart/form-data">
+<form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="modificarProductoA" enctype="multipart/form-data">
 <%--  <form:form action="/productos/modificarProductoB" method="POST"> --%> 
 	<fieldset>
 	
@@ -25,9 +25,9 @@
 	  
 	  	     <tr>
 			
-	     	<!-- <th><label for="idproductob">idproductob</label></th> -->
-			<td><form:hidden path="idproductob" maxlength="15"  id="idproductob" value= "${producto_a.idproductob}"/>
-				<form:errors path="idproductob" cssClass="error" />
+	     	<!-- <th><label for="idproductoa">idproductoa</label></th> -->
+			<td><form:hidden path="idproductoa" maxlength="15"  id="idproductoa" value= "${producto_a.idproductoa}"/>
+				<form:errors path="idproductoa" cssClass="error" />
 				
 			</td>
 		</tr>
@@ -35,9 +35,9 @@
 	  
 	     <tr>
 			
-	     	<th><label for="nombre_productoB">Codigo producto:</label></th>
-			<td><form:input path="nombre_productoB" maxlength="15"  id="nombre_productoB" value= "${producto_a.nombre_productoB}"/>
-				<form:errors path="nombre_productoB" cssClass="error" />
+	     	<th><label for="nombre_productoA">Codigo producto:</label></th>
+			<td><form:input path="nombre_productoA" maxlength="15"  id="nombre_productoA" value= "${producto_a.nombre_productoA}"/>
+				<form:errors path="nombre_productoA" cssClass="error" />
 				
 			</td>
 		</tr>
@@ -70,7 +70,7 @@
 		</tr>
 		<tr>      
 		      <th><label for="precio_a">imagen producto :</label></th>
-		      <td><c:set var="variable" value="${pageContext.request.contextPath}/imagen/${producto_a.idproductob}.jpg" />              
+		      <td><c:set var="variable" value="${pageContext.request.contextPath}/imagen/${producto_a.idproductoa}.jpg" />              
               <img  src="${variable}"width="100" height="100" />
               
        		</td>
@@ -84,12 +84,12 @@
 				
 				
 				
-	<%-- 		<td><form:label path="nombre_productoB">nombr e_productoB</form:label></td>
-			<td><form:input path="nombre_productoB"></form:input></td> --%>
-			<%-- <form:input path="nombre_productoB"/> --%>
-			<%-- <td><form:input path="nombre_productoB"></form:input></td>   --%> 
-			<%-- <form:input path="nombre_productoB" id="nombre_productoB"/> --%>
-			<%--<td><form:input path="nombre_productoB" size="33"/></td> --%>
+	<%-- 		<td><form:label path="nombre_productoA">nombr e_productoB</form:label></td>
+			<td><form:input path="nombre_productoA"></form:input></td> --%>
+			<%-- <form:input path="nombre_productoA"/> --%>
+			<%-- <td><form:input path="nombre_productoA"></form:input></td>   --%> 
+			<%-- <form:input path="nombre_productoA" id="nombre_productoA"/> --%>
+			<%--<td><form:input path="nombre_productoA" size="33"/></td> --%>
 		</tr>
 	     <tr>
     	  

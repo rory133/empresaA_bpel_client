@@ -14,7 +14,7 @@ public class ListaProductos_ASeleccionados {
 		return dataProductoASeleccionado;
 	}
 
-	public void setDataProductoBSeleccionado(
+	public void setDataProductoASeleccionado(
 			List<Producto_ASeleccionado> dataProductoASeleccionado) {
 		this.dataProductoASeleccionado = dataProductoASeleccionado;
 	}

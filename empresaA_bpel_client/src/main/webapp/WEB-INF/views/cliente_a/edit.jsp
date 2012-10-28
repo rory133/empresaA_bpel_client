@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<h2>Introducir Cliente_B</h2>
+<h2>Introducir Cliente_A</h2>
 <%-- <form:form method="POST" commandName="producto_a"> --%>
 <%-- <form:form method="POST" modelAttribute="producto_a" id="producto_a" type="producto_a" action="crearProductoB" enctype="multipart/form-data"> --%>
 <form:form method="POST" modelAttribute="cliente_a" id="cliente_a" type="cliente_a"  enctype="multipart/form-data">

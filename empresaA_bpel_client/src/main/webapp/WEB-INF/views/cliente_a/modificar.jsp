@@ -13,11 +13,11 @@
 </head>
 <body>
 
-<h2>modificar Cliente_B</h2>
+<h2>modificar Cliente_A</h2>
 
 <c:if  test="${!empty cliente_a}">
 
-<form:form method="POST" modelAttribute="cliente_a" id="cliente_a" type="cliente_a" action="${pageContext.request.contextPath}/clientes/cliente/modificarCliente_B" enctype="multipart/form-data">
+<form:form method="POST" modelAttribute="cliente_a" id="cliente_a" type="cliente_a" action="${pageContext.request.contextPath}/clientes/cliente/modificarCliente_A" enctype="multipart/form-data">
 
 
 			

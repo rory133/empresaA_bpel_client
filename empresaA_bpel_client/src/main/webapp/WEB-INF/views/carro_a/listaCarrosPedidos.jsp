@@ -34,7 +34,7 @@ window.open(URL,"miventana","width=900,height=400,menubar=no");
 
 
 <!-- <style type="text/css">body{background-color:red;}</style> -->
-<h3> BIENVENIDO A LA PAGINA DE EMPRESAB <c:out value="${pageContext.request.userPrincipal.name}"/></h3>
+<h3> BIENVENIDO A LA PAGINA DE EMPRESA A <c:out value="${pageContext.request.userPrincipal.name}"/></h3>
 <h4> ${errorCarroVacio}	</h4>
 
 <h1> Lista de carros pedidos </h1>

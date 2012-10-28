@@ -35,7 +35,7 @@
      </definition>
     	 
 	  <definition name="producto_a/edit" extends="base.definition">
-		 <put-attribute name="title" value="crearProducto_B"/>
+		 <put-attribute name="title" value="crearProducto_A"/>
 		 <put-attribute name="body" value="/WEB-INF/views/producto_a/edit.jsp"/>
       </definition>
       
@@ -50,7 +50,7 @@
       </definition>
      
      <definition name="cliente_a/edit" extends="base.definition">
-		 <put-attribute name="title" value="crearCliente_B"/>
+		 <put-attribute name="title" value="crearCliente_A"/>
 		 <put-attribute name="body" value="/WEB-INF/views/cliente_a/edit.jsp"/>
       </definition>
       	 <definition name="cliente_a/listaClientes" extends="base.definition">
@@ -65,7 +65,7 @@
     
     
       <definition name="administrador_a/edit" extends="base.definition">
-		 <put-attribute name="title" value="crearAdministrador_B"/>
+		 <put-attribute name="title" value="crearAdministrador_A"/>
 		 <put-attribute name="body" value="/WEB-INF/views/administrador_a/edit.jsp"/>
       </definition>
       	 <definition name="administrador_a/listaAdministradores" extends="base.definition">

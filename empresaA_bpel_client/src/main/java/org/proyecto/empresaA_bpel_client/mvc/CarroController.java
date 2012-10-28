@@ -695,7 +695,7 @@ public class CarroController {
 				//realizamos consulta a servidor para que nos envie todos los clientes
 				ResponseEntity<ListaProductos_A> result3 = restTemplate.exchange("http://localhost:8080/empresaA_bpel_server/productos", HttpMethod.GET, entity3, ListaProductos_A.class);
 			
-				mav.addObject("lista", result3.getBody().getDataProducto());
+				mav.addObject("productos", result3.getBody().getDataProducto());
 				
 						
 				} catch (Exception e) {
@@ -1230,8 +1230,14 @@ public class CarroController {
 			} catch (Exception e) {
 					logger.error(e);
 			}
+		
+			List<Carro_A> listaCarros=null;
+		if(null!=result3){
+			//if(null!=result3.getBody().getDataCarro()){
+			
+			listaCarros=result3.getBody().getDataCarro();
 	
-		List<Carro_A> listaCarros=result3.getBody().getDataCarro();
+	
 		//List<Carro_A> listaCarros =carro_AService.findAll();
 		
 		
@@ -1241,7 +1247,7 @@ public class CarroController {
 		
 		
 		
-		while (iterCarro.hasNext()) {
+		  while (iterCarro.hasNext()) {
 			ListaPedidos listaCarrosPedidos = new ListaPedidos();
 			Carro_A elementoCarro = iterCarro.next();
 			listaCarrosPedidos.setIdCliente(elementoCarro.getCliente_a().getIdusuarios_a());
@@ -1310,7 +1316,9 @@ public class CarroController {
 			
 		}
 		
-		
+		}else{
+			listaCarrosAMostrar=null;
+		}
 		ModelAndView mav= new ModelAndView("carro_a/verPedidos");
 		mav.addObject("TodosLosPedidos", listaCarrosAMostrar);
 		return mav;
