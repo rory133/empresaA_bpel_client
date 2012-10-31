@@ -13,11 +13,11 @@
 </head>
 <body>
 
-<h2>modificar Administrador_B</h2>
+<h2>modificar Administrador_A</h2>
 
 <c:if  test="${!empty administrador_a}">
 
-<form:form method="POST" modelAttribute="administrador_a" id="administrador_a" type="administrador_a" action="modificarAdministrador_B" enctype="multipart/form-data">
+<form:form method="POST" modelAttribute="administrador_a" id="administrador_a" type="administrador_a" action="modificarAdministrador_A" enctype="multipart/form-data">
 
 
 			
